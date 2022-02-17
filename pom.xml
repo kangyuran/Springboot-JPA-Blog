@@ -21,23 +21,19 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-	
-	
+
 	<dependencies>
 		<!-- 추가 라이브러리 시작 -->
 		<!-- 시큐리티 태그 라이브러리 -->
-		<!-- 
 		<dependency>
 		  <groupId>org.springframework.security</groupId>
 		  <artifactId>spring-security-taglibs</artifactId>
 		</dependency>
-		 -->
 		<!-- JSP 템플릿 엔진 -->
 		<dependency>
 		  <groupId>org.apache.tomcat.embed</groupId>
 		  <artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-		
 		<!-- JSTL -->
 		<dependency>
 		  <groupId>javax.servlet</groupId>
@@ -49,10 +45,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-<!-- 		<dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency> -->
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -82,12 +80,21 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<!-- 		<dependency>
+
+ 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency> -->
-	</dependencies>
+		</dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
 
 	<build>
 		<plugins>
@@ -97,5 +104,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
